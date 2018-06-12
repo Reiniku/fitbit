@@ -18,7 +18,7 @@ var redirecturl string
 var oauthCfg = &oauth2.Config{
 	ClientID:     "22CLZV",
 	ClientSecret: "fbb68a421401335786d658f2dd2537ab",
-	RedirectURL:  "http://localhost:" + os.Getenv("PORT") + "/hello",
+	RedirectURL:  "http://fitbit-service-test:" + os.Getenv("PORT") + "/hello",
 	Endpoint: oauth2.Endpoint{
 		AuthURL:  "https://www.fitbit.com/oauth2/authorize",
 		TokenURL: "https://api.fitbit.com/oauth2/token",
