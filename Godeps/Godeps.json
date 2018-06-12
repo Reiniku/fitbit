@@ -1,0 +1,23 @@
+{
+	"ImportPath": "github.com/Reiniku/fitbit",
+	"GoVersion": "go1.10",
+	"GodepVersion": "v80",
+	"Deps": [
+		{
+			"ImportPath": "golang.org/x/net/context",
+			"Rev": "5f9ae10d9af5b1c89ae6904293b14b064d4ada23"
+		},
+		{
+			"ImportPath": "golang.org/x/net/context/ctxhttp",
+			"Rev": "5f9ae10d9af5b1c89ae6904293b14b064d4ada23"
+		},
+		{
+			"ImportPath": "golang.org/x/oauth2",
+			"Rev": "6881fee410a5daf86371371f9ad451b95e168b71"
+		},
+		{
+			"ImportPath": "golang.org/x/oauth2/internal",
+			"Rev": "6881fee410a5daf86371371f9ad451b95e168b71"
+		}
+	]
+}
