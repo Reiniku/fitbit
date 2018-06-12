@@ -7,6 +7,7 @@ import (
 	"log"
 	"net/http"
 	"net/url"
+	"os"
 	"strings"
 
 	"golang.org/x/oauth2"
@@ -29,7 +30,7 @@ func main() {
 	http.HandleFunc("/", handleRoot)
 	http.HandleFunc("/hello", handleRedirect)
 	http.HandleFunc("/authorize", handleAuthorize)
-	http.ListenAndServe(":8080", nil)
+	http.ListenAndServe(":"+os.Getenv("$PORT"), nil)
 }
 
 func handleRoot(w http.ResponseWriter, r *http.Request) {
