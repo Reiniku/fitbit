@@ -17,7 +17,7 @@ var redirecturl string
 var oauthCfg = &oauth2.Config{
 	ClientID:     "22CLZV",
 	ClientSecret: "fbb68a421401335786d658f2dd2537ab",
-	RedirectURL:  "http://localhost:5000/hello",
+	RedirectURL:  "http://localhost:8080/hello",
 	Endpoint: oauth2.Endpoint{
 		AuthURL:  "https://www.fitbit.com/oauth2/authorize",
 		TokenURL: "https://api.fitbit.com/oauth2/token",
@@ -29,7 +29,7 @@ func main() {
 	http.HandleFunc("/", handleRoot)
 	http.HandleFunc("/hello", handleRedirect)
 	http.HandleFunc("/authorize", handleAuthorize)
-	http.ListenAndServe(":80", nil)
+	http.ListenAndServe(":8080", nil)
 }
 
 func handleRoot(w http.ResponseWriter, r *http.Request) {
