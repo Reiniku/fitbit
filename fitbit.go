@@ -29,7 +29,7 @@ func main() {
 	http.HandleFunc("/", handleRoot)
 	http.HandleFunc("/hello", handleRedirect)
 	http.HandleFunc("/authorize", handleAuthorize)
-	http.ListenAndServe("80", nil)
+	http.ListenAndServe("localhost:5000", nil)
 }
 
 func handleRoot(w http.ResponseWriter, r *http.Request) {
