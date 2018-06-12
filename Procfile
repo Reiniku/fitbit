@@ -1,1 +1,1 @@
-"web: fitbit" 
+web: fitbit
