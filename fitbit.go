@@ -30,7 +30,7 @@ func main() {
 	http.HandleFunc("/", handleRoot)
 	http.HandleFunc("/hello", handleRedirect)
 	http.HandleFunc("/authorize", handleAuthorize)
-	http.ListenAndServe(":"+os.Getenv("$PORT"), nil)
+	http.ListenAndServe(":"+os.Getenv("PORT"), nil)
 }
 
 func handleRoot(w http.ResponseWriter, r *http.Request) {
